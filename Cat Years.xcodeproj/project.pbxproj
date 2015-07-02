@@ -13,6 +13,7 @@
 		308439F11B071DD20051E4FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308439F01B071DD20051E4FB /* Images.xcassets */; };
 		308439F41B071DD20051E4FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308439F21B071DD20051E4FB /* LaunchScreen.xib */; };
 		30843A001B071DD20051E4FB /* Cat_YearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308439FF1B071DD20051E4FB /* Cat_YearsTests.swift */; };
+		30843A0A1B0722C30051E4FB /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 30843A091B0722C30051E4FB /* cat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		308439F91B071DD20051E4FB /* Cat YearsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cat YearsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		308439FE1B071DD20051E4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		308439FF1B071DD20051E4FB /* Cat_YearsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_YearsTests.swift; sourceTree = "<group>"; };
+		30843A091B0722C30051E4FB /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				308439E91B071DD20051E4FB /* AppDelegate.swift */,
 				308439EB1B071DD20051E4FB /* ViewController.swift */,
 				308439ED1B071DD20051E4FB /* Main.storyboard */,
+				30843A091B0722C30051E4FB /* cat.png */,
 				308439F01B071DD20051E4FB /* Images.xcassets */,
 				308439F21B071DD20051E4FB /* LaunchScreen.xib */,
 				308439E71B071DD20051E4FB /* Supporting Files */,
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					308439E31B071DD20051E4FB = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 9A646YPLPY;
 					};
 					308439F81B071DD20051E4FB = {
 						CreatedOnToolsVersion = 6.3;
@@ -194,6 +198,7 @@
 			files = (
 				308439EF1B071DD20051E4FB /* Main.storyboard in Resources */,
 				308439F41B071DD20051E4FB /* LaunchScreen.xib in Resources */,
+				30843A0A1B0722C30051E4FB /* cat.png in Resources */,
 				308439F11B071DD20051E4FB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,9 +345,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cat Years/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cat Years/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -409,6 +420,7 @@
 				30843A051B071DD20051E4FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30843A061B071DD20051E4FB /* Build configuration list for PBXNativeTarget "Cat YearsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +429,7 @@
 				30843A081B071DD20051E4FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

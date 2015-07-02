@@ -9,7 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var textfield: UITextField!
 
+    @IBOutlet weak var label2: UILabel!
+    
+    @IBAction func button(sender: AnyObject) {
+        
+        var oldage = textfield.text.toInt()
+        
+        if oldage != nil {
+        var newage = oldage! * 7
+        label2.text = "Age of your cat is \(newage)"
+        }
+        else{
+            label2.text = "Enter a number asshole!-_-"
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
